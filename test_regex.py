@@ -27,6 +27,6 @@ class TestSlackBot:
 
     def test_textraction(self):
         for message, desired in zip(self.messages, self.desired):
-            actual = textraction({'text':message})
+            actual = textraction(message)
             expected = desired
             assert actual == expected
